@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    background-color: hsl(0, 12%, 95%);
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin: 2rem;
+    color: hsl(240, 87%, 58%);
+}
+
+.inputs {
+    border: 0.2rem solid rgba(0, 0, 0, 0.27);
+    border-radius: 0.5rem;
+    width: fit-content;
+    padding: 3rem;
+    height: 40vh;
+    margin: 3rem auto;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0.2rem 0.2rem 1.5rem rgba(0, 0, 0, 0.498);
+
+}
+
+#cryptoInput {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border: 0.1rem solid hsla(0, 0%, 0%, 0.3);
+    border-radius: 0.3rem;
+    margin: 2rem 1rem;
+}
+
+#cryptoInputSubmit {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border: 0.1rem solid hsla(0, 0%, 0%, 0.3);
+    border-radius: 0.3rem;
+}
+
+#cryptoInputSubmit {
+    font-size: 1.5em;
+    background-color: hsl(9, 100%, 64%);
+    border-radius: 5px;
+    border: none;
+    padding: 5px 10px;
+    color: white;
+}
+
+#cryptoInputSubmit:hover {
+    background-color: rgb(251, 62, 29);
+    cursor: pointer;
+    transition: ease-in-out 0.4s;
+}
+
+#cryptoResult {
+    margin-top: 5rem;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+
+@media (max-width:64rem) {
+
+    html {
+        font-size: 50%;
+    }
+}
+
+@media (max-width:48rem) {
+
+    html {
+        font-size: 45%;
+    }
+}
