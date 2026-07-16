@@ -1,6 +1,7 @@
 const cryptoInput = document.getElementById("cryptoInput");
 const cryptoInputSubmit = document.getElementById("cryptoInputSubmit");
 let cryptoResult = document.getElementById("cryptoResult");
+const loading = document.getElementById("loading");
 
 cryptoInputSubmit.addEventListener("click", async () => {
 
@@ -12,6 +13,8 @@ cryptoInputSubmit.addEventListener("click", async () => {
         alert("Invalid Input !");
         return;
     }
+
+    showLoading();
 
     try {
 
@@ -36,5 +39,16 @@ cryptoInputSubmit.addEventListener("click", async () => {
         alert("Not Found !");
         return;
     }
+    finally {
+        hideLoading();
+    }
 
 })
+
+function showLoading() {
+    loading.style.display = "block";
+}
+
+function hideLoading() {
+    loading.style.display = "none";
+}
